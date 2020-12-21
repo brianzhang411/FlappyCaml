@@ -19,7 +19,7 @@ To install the packages: run the command ```opam install 'package_name'```.
 
 ## Starting Up Your Environment
 
-To build the project and run the game run ```make play```. XQuartz should open up after 20-30 seconds after the first ```make``` command.
+To build the project and run the game run ```make play```. XQuartz should open up after 20-30 seconds after the first ```make play``` command.
 
 ## Contributors
 

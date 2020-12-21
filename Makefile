@@ -19,7 +19,7 @@ play:
 	$(OCAMLBUILD) $(MAIN) && ./$(MAIN)
 
 zip:
-	zip flappycaml.zip *.ml* *.json _tags Makefile
+	zip -r flappycaml.zip *.ml* *.md* *_tags Makefile assets 
 	
 docs: docs-public docs-private
 	
