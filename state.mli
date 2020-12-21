@@ -1,3 +1,11 @@
+(**
+    Representation of states in a dynamic game play-through. 
+
+    This module represents the various states that the game can be in, and
+    contains functions that manage the transitions to other game states 
+    based on player/game parameters. 
+*)
+
 (** [type t] is the type that is used to represent the state of the game *)
 type t
 
@@ -31,7 +39,7 @@ val set_death: t -> t
 (** [string_of_state t] returns a string representation of t *)
 val string_of_state : t -> string 
 
-(** [check t] is used to check the current state of the game. [check t] is 
+(** [check t Game.t] is used to check the current state of the game. [check t] is 
     responsible for transitioning the game to the correct state depending on
     the user's actions. *)
 val check : t-> Game.t -> t
