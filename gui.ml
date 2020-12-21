@@ -366,7 +366,10 @@ let draw_gameover init =
   moveto 275 325;
   set_font "-*-Helvetica-medium-r-normal--80-*-*-*-*-*-iso8859-1";
   draw_string score_s;
-  set_font "fixed"
+  set_font "fixed";
+  set_color red;
+  moveto 230 250;
+  draw_string "Press any key to continue"
 
 (* [draw_flappycaml] draws the flappy caml ascii art at x y (left top corner) *)
 let draw_flappycaml x y = 
